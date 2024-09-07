@@ -15,7 +15,7 @@ app.get('/generate-file', async (req, res) => {
         const checksum = response.headers['x-checksum'];
 
         // Define the directory and file path
-        const dirPath = path.join(__dirname, 'clientdata');
+        const dirPath = path.join('/', 'clientdata');
         const filePath = path.join(dirPath, 'received_file.txt');
 
         // Check if the directory exists, if not, create it
