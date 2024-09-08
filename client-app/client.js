@@ -9,7 +9,7 @@ app.use(express.json());
 app.get('/generate-file', async (req, res) => {
     try {
         // Make a request to the external endpoint
-        const response = await axios.get('http://localhost:3000/generate-file');
+        const response = await axios.get('http://server:3002/generate-file');
 
         // Extract the x-checksum header
         const checksum = response.headers['x-checksum'];
