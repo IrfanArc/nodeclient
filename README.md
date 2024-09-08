@@ -1,4 +1,5 @@
-This is a simple client app written in Node.js using express framework. It calls the nodeserver app and fetches the file in an http response and stores it in /clientdata.
+This is a simple client app written in Node.js using express framework. It calls the nodeserver app and fetches the file in an http response and stores it in /clientdata.  
+Dockerfile and Docker-compose files are part of this repository.
 
 Heres a sample use of this app:
 irfan@irfan-4180b39:~/Desktop/dice/project/git/nodeserver/server/express-checksum$ curl -v -X GET http://localhost:3001/generate-file
